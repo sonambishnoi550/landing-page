@@ -1,0 +1,769 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.container-1320 {
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.pt-30 {
+    padding-top: 30px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.py-24 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.gap-32 {
+    gap: 32px;
+}
+
+.logo {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #C7C7C7;
+}
+
+.nav-link {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #C7C7C7;
+}
+
+.hero-btn:hover {
+    background-color: white;
+    border: 2px solid #D3E97A;
+    transition: all 3ms linear;
+    transition-duration: 700;
+}
+
+.submit-btn:hover {
+    background-color: white;
+    border: 2px solid #D3E97A;
+    transition: all 3ms linear;
+    transition-duration: 700;
+}
+
+.nav-link:hover {
+    font-weight: 700;
+    transition: all 3ms linear;
+    transition-duration: 700;
+}
+
+.icon-bg:hover {
+    scale: 1.1;
+    transition: all 3ms linear;
+    transition-duration: 700;
+}
+
+.live:hover svg {
+    rotate: 45deg;
+    transition: all 3ms linear;
+    transition-duration: 700;
+}
+
+.col-6 {
+    width: 50%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.col-4 {
+    width: 33.33%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.hero-heading {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 101px;
+    font-weight: 400;
+    line-height: 101%;
+    text-align: left;
+    color: #FFFFFF;
+    max-width: 476px;
+    padding-top: 160px;
+
+}
+
+.hero-pera {
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    color: #C7C7C7;
+    max-width: 544px;
+    padding-top: 8px;
+}
+
+.hero-btn {
+    border: 2px solid #D3E97A;
+    border-radius: 60px;
+    background: #D3E97A;
+    padding: 19px 24px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+}
+
+.dot {
+    color: black;
+    width: 10.28px;
+    height: 10.28px;
+    background-color: black;
+    border-radius: 100%;
+    margin-left: 24px;
+    margin-top: 2px;
+
+}
+
+.icon-bg {
+    width: 54px;
+    height: 54px;
+    border-radius: 100px;
+    background: #222222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gap-16 {
+    gap: 16px;
+}
+
+.pt-40 {
+    padding-top: 40px;
+}
+
+.hero-boy {
+    max-width: 564px;
+
+}
+
+.-mb-4 {
+    margin-bottom: -4px;
+}
+
+.pb-80 {
+    padding-bottom: 80px;
+}
+
+/* Featured */
+.Featured-heading {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 76px;
+    font-weight: 400;
+    line-height: 1;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.featured-pera {
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    color: #C7C7C7;
+    max-width: 600px;
+    padding-top: 8px;
+    padding-bottom: 80px;
+}
+
+.col-5 {
+    width: 41.66%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.max-w-1140 {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.mr-24 {
+    margin-right: 24px;
+}
+
+/*  */
+
+.col-5 {
+    flex: 0 0 48%;
+}
+
+.card-bg {
+    background-color: #121212;
+    border-radius: 12px;
+    padding: 40px;
+    text-align: center;
+}
+
+.card1-image {
+    width: 426px;
+    border-radius: 8px;
+    height: 302px;
+}
+
+.card-heading {
+    font-family: 'Manrope', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 140%;
+    text-align: left;
+    color: #FFFFFF;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.live {
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    color: #D3E97A;
+    border-bottom: 2px solid #D3E97A;
+}
+
+.live svg {
+    margin-left: 5px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.py-80 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.pb-60 {
+    padding-bottom: 60px;
+}
+
+/* about */
+.about-pera {
+    font-family: 'Manrope', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+.more-about-me {
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #d9f80a;
+    border-bottom: 2px solid #d9f80a;
+    padding-bottom: 5px;
+    transition: all 0.3s ease;
+}
+
+.more-about-me:hover {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.pb-391 {
+    padding-bottom: 391px;
+}
+
+.about-heading {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 101px;
+    font-weight: 400;
+    line-height: 90.9px;
+    text-align: left;
+    color: #FFFFFF;
+    white-space: nowrap;
+
+}
+
+.pt-122 {
+    padding-top: 122px;
+}
+
+.about-text {
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    color: #C7C7C7;
+    padding-top: 16px;
+    padding-bottom: 53px;
+}
+
+/* connect */
+.contact-left {
+    flex: 1;
+}
+
+.contact-left h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 76px;
+    font-weight: 400;
+    line-height: 76px;
+    text-align: left;
+    color: #FFFFFF;
+    white-space: nowrap;
+
+
+}
+
+.contact-left p {
+    margin: 10px 0;
+}
+
+.mail-text a {
+    color: #FFFFFF;
+    text-decoration: none;
+    border-bottom: 2px solid #a4e600;
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.section-border-b {
+    border-bottom: 1px solid #484848;
+    margin-bottom: 80px;
+}
+
+.mb-122 {
+    margin-bottom: 122px;
+}
+
+.mb-55 {
+    margin-bottom: 55px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.contact-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: #222;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 18px;
+    outline: none;
+
+}
+
+
+form textarea {
+    resize: none;
+    height: 100px;
+}
+
+.gap-397 {
+    gap: 397px;
+}
+
+.submit-btn {
+    padding: 19px 40px;
+    background: #D3E97A;
+    border: 2px solid #D3E97A;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 100px;
+    width: 140px;
+    margin-top: 40px;
+}
+
+form button:hover {
+    background-color: #a4e600;
+}
+
+
+footer {
+    margin-top: -24px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 700;
+    color: #C7C7C7;
+    font-family: 'Manrope', sans-serif;
+}
+
+.about-image {
+    display: none;
+}
+
+.mail-text {
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    color: #C7C7C7;
+}
+
+.form-text {
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25.6px;
+    text-align: left;
+    color: #C7C7C7;
+    margin-top: 24px;
+}
+
+
+.mt-0 {
+    margin-top: 0;
+}
+
+.col-7 {
+    width: 58.33%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.col-3 {
+    width: 24%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+@media(max-width:1024.99px) {
+    .hero-heading {
+        font-size: 80px;
+        padding-top: 130px;
+    }
+
+    .hero-boy {
+        width: 454px;
+    }
+
+    .card1-image {
+        width: 376px;
+
+    }
+
+    .card-heading {
+        font-size: 28px;
+    }
+
+    .form-w-976 {
+        width: 976px;
+        margin: auto;
+    }
+
+    footer {
+        margin-left: 10px;
+    }
+
+    .lg-pb-300 {
+        padding-bottom: 300px;
+    }
+}
+
+@media(max-width:768.98px) {
+    label[for="menubar"]>span {
+        transition: all 200ms linear;
+    }
+
+
+    label[for="menubar"] {
+        width: 32px;
+        height: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+        z-index: 1;
+    }
+
+    label[for="menubar"]>span {
+        width: 100%;
+        height: 2px;
+        background-color: white;
+        border-radius: 2px;
+    }
+
+    ul.mobile-view {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background: black;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        transition: all 200ms linear;
+    }
+
+    input[type="checkbox"]:checked~ul {
+        background-color: black;
+        left: 0;
+    }
+
+    .col-12 {
+        width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .hero-boy {
+        width: 354px;
+    }
+
+    .hero-heading {
+        font-size: 60px;
+        padding-top: 30px;
+    }
+
+    .card1-image {
+        width: 269px;
+        height: 192px;
+    }
+
+    .card-bg {
+        padding: 30px;
+    }
+
+    .card-heading {
+        font-size: 24px;
+    }
+
+    .pb-49 {
+        padding-bottom: 49px;
+    }
+
+    .pb-26 {
+        padding-bottom: 26px;
+    }
+
+    .pb-83 {
+        padding-bottom: 83px;
+    }
+
+    .about-pera {
+        padding-top: 40px;
+    }
+
+    .md-pb-122 {
+        padding-bottom: 122px;
+    }
+
+    .connect-row {
+        flex-direction: column;
+    }
+
+    .form-w-976 {
+        width: 100%;
+    }
+
+    form {
+        padding-top: 50px;
+    }
+
+    footer {
+        margin-top: 30px;
+    }
+
+    .px-12 {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .pl-12 {
+        padding-left: 12px;
+    }
+
+}
+
+
+
+
+@media (max-width: 576px) {
+    .col-5 {
+        flex: 0 0 100%;
+        margin-bottom: 20px;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .pb-30 {
+        padding-bottom: 30px;
+    }
+
+    .Featured-heading {
+        font-size: 43px;
+    }
+
+    .featured-pera {
+        padding-bottom: 64px;
+        font-size: 16px;
+    }
+
+    .card-heading {
+        font-size: 20px;
+    }
+
+    .pb-44 {
+        padding-bottom: 44px;
+    }
+
+    .about-heading {
+        font-size: 70px;
+    }
+
+    .about-pera {
+        font-size: 24px;
+
+        padding-top: 5px;
+    }
+
+    .contact-left h1 {
+        font-size: 43px;
+    }
+
+    .mail-text {
+        font-size: 16px;
+    }
+
+    .mail-text a {
+        font-size: 16px;
+    }
+
+    .submit-btn {
+        margin-top: 32px;
+    }
+
+    footer {
+        margin-top: 80px;
+    }
+
+    .mb-64 {
+        margin-bottom: 64px;
+    }
+
+    .about-image {
+        width: 323px;
+        margin-top: 64px;
+        display: block;
+    }
+
+    .pb-16 {
+        padding-bottom: 16px;
+    }
+
+    .pb-64 {
+        padding-bottom: 64px;
+    }
+
+    .pt-64 {
+        padding-top: 64px;
+    }
+
+    .pt-32 {
+        padding-top: 32px;
+    }
+
+    .hero-heading {
+        font-size: 57px;
+        padding-top: 0;
+    }
+
+    .hero-pera {
+        font-size: 16px;
+        padding-top: 12px;
+    }
+
+    .pt-40 {
+        padding-top: 40px;
+    }
+}
