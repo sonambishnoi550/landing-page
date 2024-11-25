@@ -10,8 +10,12 @@
     list-style-type: none;
 }
 
+body {
+    scroll-behavior: smooth;
+}
+
 .container {
-    max-width: 1140px;
+    max-width: 1224px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 12px;
@@ -19,7 +23,7 @@
 }
 
 .container-1320 {
-    max-width: 1240px;
+    max-width: 1320px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 12px;
@@ -95,20 +99,18 @@
 
 .nav-link:hover {
     font-weight: 700;
-    transition: all 3ms linear;
-    transition-duration: 700;
+    border-bottom: 2px solid #D3E97A;
+    transition: all 0.5s ease-in-out;
 }
 
 .icon-bg:hover {
-    scale: 1.1;
-    transition: all 3ms linear;
-    transition-duration: 700;
+    transition: transform 0.7s linear;
+    transform: scale(1.1);
 }
 
 .live:hover svg {
     rotate: 45deg;
-    transition: all 3ms linear;
-    transition-duration: 700;
+    transition: transform 0.7s ease-in-out;
 }
 
 .col-6 {
@@ -132,7 +134,6 @@
     color: #FFFFFF;
     max-width: 476px;
     padding-top: 160px;
-
 }
 
 .hero-pera {
@@ -150,7 +151,7 @@
     border: 2px solid #D3E97A;
     border-radius: 60px;
     background: #D3E97A;
-    padding: 19px 24px;
+    padding: 17px 24px;
     font-family: 'Manrope', sans-serif;
     font-weight: 700;
     line-height: 16px;
@@ -169,7 +170,11 @@
     border-radius: 100%;
     margin-left: 24px;
     margin-top: 2px;
+}
 
+.footer-icon:hover {
+    transition: transform 0.7s linear;
+    transform: scale(1.3);
 }
 
 .icon-bg {
@@ -191,8 +196,8 @@
 }
 
 .hero-boy {
-    max-width: 564px;
-
+    max-width: 600px;
+    pointer-events: none;
 }
 
 .-mb-4 {
@@ -240,7 +245,7 @@
     margin-right: 24px;
 }
 
-/*  */
+/* card-section */
 
 .col-5 {
     flex: 0 0 48%;
@@ -254,7 +259,7 @@
 }
 
 .card1-image {
-    width: 426px;
+    width: 486px;
     border-radius: 8px;
     height: 302px;
 }
@@ -264,7 +269,7 @@
     font-size: 32px;
     font-weight: 500;
     line-height: 140%;
-    text-align: left;
+    text-align: center;
     color: #FFFFFF;
     padding-top: 16px;
     padding-bottom: 16px;
@@ -284,8 +289,8 @@
     margin-left: 5px;
 }
 
-.mb-50 {
-    margin-bottom: 50px;
+.mb-80 {
+    margin-bottom: 80px;
 }
 
 .py-80 {
@@ -321,8 +326,8 @@
     border-bottom: 2px solid #fff;
 }
 
-.pb-391 {
-    padding-bottom: 391px;
+.pb-400 {
+    padding-bottom: 400px;
 }
 
 .about-heading {
@@ -333,7 +338,6 @@
     text-align: left;
     color: #FFFFFF;
     white-space: nowrap;
-
 }
 
 .pt-122 {
@@ -364,8 +368,6 @@
     text-align: left;
     color: #FFFFFF;
     white-space: nowrap;
-
-
 }
 
 .contact-left p {
@@ -397,8 +399,9 @@
 
 .social-icons {
     display: flex;
-    gap: 15px;
+    gap: 24px;
     margin-top: 40px;
+    padding-bottom: 325px;
 }
 
 .social-icons img {
@@ -428,9 +431,13 @@ form textarea {
     border-radius: 5px;
     font-size: 18px;
     outline: none;
-
+    font-weight: 400;
+    line-height: 27px;
 }
 
+.form-textarea {
+    height: 156px;
+}
 
 form textarea {
     resize: none;
@@ -442,28 +449,27 @@ form textarea {
 }
 
 .submit-btn {
-    padding: 19px 40px;
+    padding: 16px 40px;
     background: #D3E97A;
     border: 2px solid #D3E97A;
     color: #000;
-    font-weight: bold;
+    font-weight: 700;
     cursor: pointer;
     border-radius: 100px;
     width: 140px;
-    margin-top: 40px;
+    margin-top: 32px;
+    font-size: 16px;
 }
 
 form button:hover {
     background-color: #a4e600;
 }
 
-
-footer {
-    margin-top: -24px;
+.footer-link {
     text-align: left;
     font-size: 16px;
-    font-weight: 700;
-    color: #C7C7C7;
+    font-weight: 500;
+    color: #C7C7C7 !important;
     font-family: 'Manrope', sans-serif;
 }
 
@@ -472,7 +478,7 @@ footer {
 }
 
 .mail-text {
-    font-family: Manrope;
+    font-family: 'Manrope', sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 27px;
@@ -487,9 +493,8 @@ footer {
     line-height: 25.6px;
     text-align: left;
     color: #C7C7C7;
-    margin-top: 24px;
+    margin-top: 16px;
 }
-
 
 .mt-0 {
     margin-top: 0;
@@ -507,10 +512,19 @@ footer {
     padding-right: 12px;
 }
 
+.d-none {
+    display: none;
+}
+
 @media(max-width:1024.99px) {
     .hero-heading {
         font-size: 80px;
         padding-top: 130px;
+    }
+
+    .px-20 {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .hero-boy {
@@ -519,7 +533,6 @@ footer {
 
     .card1-image {
         width: 376px;
-
     }
 
     .card-heading {
@@ -531,11 +544,11 @@ footer {
         margin: auto;
     }
 
-    footer {
+    .footer-link {
         margin-left: 10px;
     }
 
-    .lg-pb-300 {
+    .pb-300 {
         padding-bottom: 300px;
     }
 }
@@ -544,7 +557,6 @@ footer {
     label[for="menubar"]>span {
         transition: all 200ms linear;
     }
-
 
     label[for="menubar"] {
         width: 32px;
@@ -584,6 +596,10 @@ footer {
         left: 0;
     }
 
+    .social-icons {
+        padding-bottom: 0;
+    }
+
     .col-12 {
         width: 100%;
         padding-left: 12px;
@@ -591,12 +607,36 @@ footer {
     }
 
     .hero-boy {
-        width: 354px;
+        max-width: 354px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-heading {
+        font-size: 80px;
+    }
+
+    .mb-100 {
+        margin-bottom: 100px;
     }
 
     .hero-heading {
         font-size: 60px;
         padding-top: 30px;
+        text-align: center;
+        max-width: 500px;
+        margin: auto;
+    }
+
+    .hero-pera {
+        text-align: center;
+        margin: auto;
+    }
+
+    .hero-icon {
+        display: flex;
+        justify-content: center;
     }
 
     .card1-image {
@@ -628,8 +668,8 @@ footer {
         padding-top: 40px;
     }
 
-    .md-pb-122 {
-        padding-bottom: 122px;
+    .md-pb-100 {
+        padding-bottom: 100px;
     }
 
     .connect-row {
@@ -644,23 +684,14 @@ footer {
         padding-top: 50px;
     }
 
-    footer {
-        margin-top: 30px;
-    }
-
-    .px-12 {
-        padding-left: 12px;
-        padding-right: 12px;
-    }
-
     .pl-12 {
         padding-left: 12px;
     }
 
+    .pb-64 {
+        padding-bottom: 64px;
+    }
 }
-
-
-
 
 @media (max-width: 576px) {
     .col-5 {
@@ -703,7 +734,6 @@ footer {
 
     .about-pera {
         font-size: 24px;
-
         padding-top: 5px;
     }
 
@@ -723,26 +753,44 @@ footer {
         margin-top: 32px;
     }
 
-    footer {
-        margin-top: 80px;
-    }
-
     .mb-64 {
         margin-bottom: 64px;
     }
 
+    .pb-64 {
+        padding-bottom: 64px;
+    }
+
+    .hero-boy {
+        max-width: 322px;
+    }
+
+    .card-bg {
+        padding: 24px;
+    }
+
+    .hidden {
+        display: none;
+    }
+
     .about-image {
-        width: 323px;
+        width: 337px;
         margin-top: 64px;
         display: block;
+    }
+
+    .social-icons {
+        gap: 32px;
+        padding-bottom: 0;
     }
 
     .pb-16 {
         padding-bottom: 16px;
     }
 
-    .pb-64 {
-        padding-bottom: 64px;
+    .footer-link {
+        padding-top: 80px;
+        display: block;
     }
 
     .pt-64 {
@@ -756,14 +804,22 @@ footer {
     .hero-heading {
         font-size: 57px;
         padding-top: 0;
+        max-width: 269px;
+        text-align: left;
+        margin: 0;
     }
 
     .hero-pera {
         font-size: 16px;
         padding-top: 12px;
+        text-align: left;
     }
 
     .pt-40 {
         padding-top: 40px;
+    }
+
+    .hero-btn {
+        padding: 17px 16px;
     }
 }
